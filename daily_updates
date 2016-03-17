@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sudo um update -y
+
+sudo yum upgrade -y
+
+mail -s "Daily Update/Upgrade Report" "devinst.clair@gmail.com" << END_MAIL
+Hello Devin, is a report to inform you that all system updates and upgrades have been performed. 
+
+Regards,
+
+Devin's EC2 Linux Server
+
+END_MAIL
+
